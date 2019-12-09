@@ -7,10 +7,10 @@ export default class ColorBox extends Component {
     return (
       
       <div className="color-box" style={{opacity: this.props.opacity}}>
-           //Note: The style attribute accepts a JavaScript object with camelCased properties rather than a CSS string
+           {console.log(this.props.opacity)}
         {/* your conditional code here! */
           this.props.opacity >= 0.2 ? <ColorBox opacity={parseFloat((this.props.opacity-.1).toFixed(1))}/> : null 
-          }
+        }
       </div>
     )
   }
